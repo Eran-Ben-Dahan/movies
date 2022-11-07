@@ -1,0 +1,10 @@
+.login{
+    background-color: gold;
+    padding: 0 10px ;
+    border-radius: 20px;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top:16px ;
+}
+

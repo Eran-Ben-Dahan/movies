@@ -1,0 +1,90 @@
+.comments{
+    margin-top: 20px;
+}
+.comments-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.comments-container{
+    margin-top: 40px;
+}
+.comments-form-title{
+    font-size: 22px;
+}
+.comments-form-texstarea{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border: 1px solid rgb(107,114,12);
+}
+
+
+
+
+/*
+.CommentsMaim {
+  min-height: 100px;
+  height: 200px;
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  justify-content: center;
+}
+.CommentsLeft div {
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, */
+    /* rgba(0, 0, 0, 0.8) 0px 0px 0px 1px; */
+  /* display: flex;
+  gap: 10px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+  /* background-image: linear-gradient(to bottom, #eecde0, #e0badb, #ccaada, #b29cda, #8e90db, #878dde, #7e8ae0, #7587e3, #958ae7, #b28de9, #cc90e9, #e493e7);  display: flex; */
+  /* flex-direction: column;
+  gap: 10px;
+  width: 30rem;
+  border:solid 2px gold;
+  background-color:#0F3460 ;
+  color: white;
+}
+h2{
+    font-size: 30px; */
+/* }
+.commentRigth{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.commentRigth input{
+    border-radius: 5px; */
+    /* padding: 5px;
+    border:solid 2px gold;
+    background-color:#0F3460 ;
+    color: white;
+} */
+/* .commentRigth textarea{
+    border-radius: 5px;
+    height: 80px;
+    padding: 5px;
+    border:solid 2px gold;
+    background-color:#0F3460 ;
+    color: white;
+}
+.commentRigth button{
+    border:solid 2px gold;
+    border-radius: 5px;
+    color:gold;
+    background-color:#0F3460 ;
+    font-size: 30px;
+}
+.commentRigth button:hover{
+    background-color: gold ;
+    color: #0F3460;
+} */ 

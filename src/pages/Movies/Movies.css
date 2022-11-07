@@ -1,0 +1,49 @@
+.movie_list_controle {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 1024px;
+  max-width: 1024px;
+  min-width: 1024px;
+  margin: 0 auto;
+  gap: 40px 50px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1399px) {
+  .movie_list_controle {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 1024px;
+    max-width: 1024px;
+    min-width: 1024px;
+    margin: 0 auto;
+    gap: 40px 50px;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 1199px) {
+  .movie_list_controle {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1011px) {
+  .movie_list_controle {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 0px;
+    
+  }
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 580px) {
+}
+@media (max-width: 300px) {
+}

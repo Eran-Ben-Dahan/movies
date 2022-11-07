@@ -1,0 +1,53 @@
+.cardItem {
+  width: 30%;
+  display: flex;    
+  flex-wrap: 4;
+  position: relative;
+}
+.cardItemHover:hover {
+  transform: scale(1.1)
+}
+.favorite
+{
+  position: absolute;
+  top: 20px;
+  left: 60px;
+
+}
+.image_Card{
+  width: 180px;
+  height: 250px;
+  padding: 5px;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 16px 10px rgba(0, 0, 0, 0.466); 
+}
+/* .image_Card:hover{
+  width: 185px;
+  height: 255px;
+} */
+.movie_item__stars{
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  bottom:-23px;
+}
+
+
+@media (max-width: 1399px) {
+ 
+}
+@media (max-width: 1199px) {
+  
+}
+@media (max-width: 1011px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 580px) {
+
+}
+@media (max-width: 300px) {
+
+}

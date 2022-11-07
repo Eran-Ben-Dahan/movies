@@ -1,0 +1,15 @@
+.favoriets{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    justify-content: center;
+    width: 1024px;
+    max-width: 1024px;
+    min-width: 1024px;
+    margin: 0 auto;
+    gap: 30px 50px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+

@@ -1,0 +1,23 @@
+.light {
+    background: black;
+    color: white;
+}
+.dark {
+ background:  #0F3460;
+ color:black;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+}
+
+.page_1_dark {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.page_1_light {
+    background-color: #0F3460;  
+    min-height: 100vh;
+}
+
