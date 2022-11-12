@@ -15,10 +15,10 @@ export const imageUrl = (image_path) =>
   `https://image.tmdb.org/t/p/original${image_path}`;
 const initialState = {
   movies: [],
-  moviesFiltered:[],
+  moviesFiltered:[  ],
   error: "",
   loading: false,
-
+  
 };
 // REDUX works with reducers, async func can't change the state
 //createAsyncThunk is a helper for writing async in the slice, then we use it in 'extra-redcuers'

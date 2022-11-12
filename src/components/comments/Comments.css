@@ -1,0 +1,147 @@
+
+
+.CommentsMaim {
+  min-height: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+ justify-items: center;
+padding: 15px;
+
+}
+.CommentsLeft {
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, 
+     rgba(0, 0, 0, 0.8) 0px 0px 0px 1px; 
+   display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+   background-image: linear-gradient(to bottom, #ffffff, #e0badb, #ccaada, #b29cda, #8e90db, #878dde, #7e8ae0, #7587e3, #958ae7, #b28de9, #cc90e9, #e493e7);  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+  width: 30rem;
+  border:solid 2px gold;
+  background-color:#0F3460 ;
+  color: white;
+
+}
+h2{
+    font-size: 30px; 
+ }
+.commentRigth{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    z-index: 10;
+
+}
+::placeholder {
+    color: white;
+    font-size: 15px;
+}
+.commentRigth input{
+    border-radius: 5px; 
+    padding: 5px;
+    border:solid 2px gold;
+    background-color:#0F3460 ;
+    color: white;
+} 
+.commentRigth textarea{
+    border-radius: 5px;
+    height: 80px;
+    padding: 5px;
+    border:solid 2px gold;
+    background-color:#0F3460 ;
+    color: white;
+}
+.commentRigth button{
+    border:solid 2px gold;
+    border-radius: 5px;
+    color:gold;
+    background-color:#0F3460 ;
+    font-size: 30px;
+}
+.commentRigth button:hover{
+    background-color: gold ;
+    color: #0F3460;
+} 
+.icons{
+display: flex;
+}
+.userName{
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    .CommentsLeft {
+        width: 20rem;
+    }
+    
+    .commentRigth{
+        width: 200px;
+    }
+    .commentRigth button{
+        font-size: 20px;
+    }
+    .userName{
+        font-size: 20px;
+    }
+    P{
+        font-size: 15px;
+    }
+    .date{
+        font-size: 15px;
+    }
+    
+    @media (max-width: 650px) {
+        .CommentsLeft {
+            width: 15rem;
+        }
+        
+    .commentRigth{
+        width: 150px;
+    }
+    .commentRigth button{
+        font-size: 20px;
+    }
+    
+    }
+    @media (max-width: 500px) {
+        .CommentsMaim {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center
+           
+        }
+        .CommentsLeft {
+            width: 15rem;
+        }
+        .commentRigth{
+            width: 15rem;
+            
+        }
+    }
+
+    @media (max-width:300px) {
+        .CommentsMaim {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center
+           
+        }
+        .CommentsLeft {
+            width: 10rem;
+        }
+        .commentRigth{
+            width: 10rem; 
+        }
+        .commentRigth button{
+            font-size: 15px;
+        }
+    }
+}

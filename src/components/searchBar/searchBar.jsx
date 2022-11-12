@@ -1,10 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import { useSearchQuery } from "../../hooks/useSearchQuery";
-import MovieItem from "../MovieItem/MovieItem";
 import './searchBar.css'
-
-
 
 const SearchBar = () => {
   const setQuery = useSearchQuery();
@@ -18,7 +14,8 @@ const SearchBar = () => {
       
       <input className="searchBar"
         type="text"
-        placeholder="Search..."s
+        placeholder="Search..."
+      
         onChange={(e) => {
           handleChange(e.target.value);
         }}

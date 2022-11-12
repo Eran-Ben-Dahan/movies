@@ -19,15 +19,11 @@ const Main = styled.main`
   justify-content: flex-start;
   max-width: 1240px;
   width: 90%;
-
   text-align: left;
-
   p {
-    width: calc(100% - 400px);
-    line-height: 1.4;
     
+    line-height: 1.4;
   }
-  
 `;
 
 const Title = styled.h2`
@@ -39,14 +35,12 @@ const Title = styled.h2`
   width: 100%;
   margin-bottom: 20px;
   text-transform: uppercase;
-  
 `;
 
 const Links = styled.div`
   margin-left: auto;
   
   a {
-    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -54,7 +48,6 @@ const Links = styled.div`
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-
     position: relative;
     z-index: 3;
     overflow: hidden;
@@ -62,21 +55,17 @@ const Links = styled.div`
     margin-top: -5px;
     margin-right: -5px;
     transition: all 200ms ease;
-
     :hover {
       color: white;
-
       :before {
         transform: translateY(0%);
       }
-
       svg {
         path {
           fill: white;
         }
       }
     }
-
     :before {
       content: "";
       width: calc(100% + 10px);
@@ -92,7 +81,6 @@ const Links = styled.div`
       transition: all 200ms ease;
       transform: translateY(100%);
     }
-
     svg {
       margin-right: 10px;
       path {

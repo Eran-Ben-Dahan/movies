@@ -6,8 +6,7 @@ import genres from "../../features/movies/genres";
 import useMovies from "../../hooks/useMovies";
 import "./Movies.css";
 
-import { useSearchQuery } from "../../hooks/useSearchQuery";
-import { useEffect } from "react";
+
 
 
 function isNumberGenre(genre) {
@@ -34,7 +33,7 @@ const Movies = () => {
   return (
     <div className={isDark ? "page_1_dark" : "page_1_light"}>
      
-      {/* פה לשנות את כל התצוגה של הכרטיסיות */}
+     
     
       
       <div

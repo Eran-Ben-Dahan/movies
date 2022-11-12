@@ -10,7 +10,7 @@ import Home from './pages/Home/Home';
 import { useSelector } from "react-redux";
 import Footer from "../src/Footer/Footer.jsx";
 import { ToastContainer } from "react-toastify";
-import Comments from "./pages/Comments/App";
+import Comments from "./pages/Comments/Comments";
 function App() {
   //once the app is loaded, fetch the movies once.
   const isDark = useSelector((state)=> state.theme.isDark)//מצב התחלתי של ISDARK INITIALSTATE

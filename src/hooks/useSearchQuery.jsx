@@ -1,8 +1,7 @@
-import React from 'react'
+
 import { useState,useEffect } from 'react'
-import axios from 'axios'
-import { useDispatch, useSelector } from 'react-redux'
-import { filterMovies,movieUrl,imageUrl } from '../features/movies/movies-slice'
+import { useDispatch,  } from 'react-redux'
+import { filterMovies,imageUrl } from '../features/movies/movies-slice'
 // לשים את QUERY כ STATE 
 
 export const useSearchQuery = () => {

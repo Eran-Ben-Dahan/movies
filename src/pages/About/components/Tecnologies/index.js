@@ -7,8 +7,6 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: center;
   width: 100%;
-  
- 
 `;
 
 const Main = styled.main`

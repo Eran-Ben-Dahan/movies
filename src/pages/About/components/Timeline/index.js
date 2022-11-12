@@ -16,9 +16,7 @@ const Main = styled.main`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-
   text-align: left;
-
   p {
     width: calc(100% - 400px);
     line-height: 1.4;
@@ -53,7 +51,6 @@ const ItemTitle = styled.h1`
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-
   :after {
     content: "";
     width: 14px;
