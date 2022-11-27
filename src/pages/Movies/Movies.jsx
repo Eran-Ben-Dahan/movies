@@ -5,7 +5,7 @@ import NextPage from "../../components/NextPage/NextPage";
 import genres from "../../features/movies/genres";
 import useMovies from "../../hooks/useMovies";
 import "./Movies.css";
-
+import TopNav2 from '../../components/nav/TopNav2'
 
 
 
@@ -33,18 +33,18 @@ const Movies = () => {
   return (
     <div className={isDark ? "page_1_dark" : "page_1_light"}>
      
-     
-    
-      
       <div
         className="movie_list_controle"
         style={{ direction: "rtl" }}
       >
+          
         {movies.map((m) => (
           <MovieItem key={m.id} movie={m} />
         ))}
       </div>
+      <TopNav2/>
       <NextPage genre={getGenreId(genre).genre} />
+      
     </div>
   );
 };

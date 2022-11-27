@@ -1,8 +1,8 @@
 import { Switch } from "@mantine/core";
 import { IconSun, IconMoonStars } from "@tabler/icons";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { toggleDark } from "../../../features/theme/theme-slice";
-import './BtnDarkMode.css'
+
 export default function SwitchToggle() {
   // const isDark = useSelector((state) => state.theme.isDark);
   const dispatch = useDispatch();

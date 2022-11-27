@@ -5,23 +5,26 @@ import { BiCameraMovie } from "react-icons/bi";
 import TopNavLink from "./TopNavLink";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./TopNav.css";
+import Login from "./Login";
 // import Swal from "sweetalert2";
-import Login from './Login'
+// import Login from './Login'
 import BtnDarkMode from './BtnDarkMode/BtnDarkMode'
-import SearchBar from '../../components/searchBar/searchBar'
+
 
 const TopNav = () => {
   return (
     <Navbar  expand="lg" className="navbar">
+        
       <Container className="container">
         {/* BRAND: logo + app name */}
-        <NavLink to="/" className="navbar-brand">
-        <span className="text-muted" color="#ffd700">Movie App</span>
-          <BiCameraMovie className="logoIcon" color="#ffd700" />
+          <NavLink to="/" className="navbar-brand">
+        {/* <span className="text-muted">Movie App</span> */}
+        <BiCameraMovie className="logoIcon" color="#ecba25" />
         </NavLink>
+        
         {/* BURGER */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="color=FFDE00" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="NavbarCollapse">
           <Nav className="me-auto">
             <TopNavLink to="/home" label="Home" />
             <TopNavLink to="/movies" label="Movies" />
@@ -41,12 +44,12 @@ const TopNav = () => {
             <TopNavLink to="/favorites" label="Favorites" />
             <TopNavLink to="/comments" label="Comments" />
             <TopNavLink to="/about" label="About" />
-            <BtnDarkMode/>
-            <SearchBar/>
-            <Login/>
           </Nav>
+          
         </Navbar.Collapse>
       </Container>
+      <Login />
+          <BtnDarkMode className="BtnDarkMode"/>
     </Navbar>
   );
 };

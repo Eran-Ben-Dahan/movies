@@ -1,18 +1,42 @@
+
 .navbar{
     height: 80px;
     font-size: 30px;
+    
     background-image: linear-gradient(to right bottom, #6b6bd1, #6e7dd9, #748edf, #7e9ee4, #8caee7, #8dace2, #8dabdc, #8ea9d7, #7f97c8, #7285b9, #6573aa, #59629b);   
 }
+
 .navbarToggle
 {
     display: flex;
     flex: 20%; 
 }
 .logoIcon{
-    font-size: 50px;
+    font-size: 60px;
+    position: absolute;
+    left: 40px;
+    top:10px
 }
 .text-muted{
     font-size: 30px;
 }
 
+.BtnDarkMode{
+    position: absolute;
+    right: 180px;
+}
+.login{
+    position: absolute;
+    right: 40px;
+}
+
+
+@media (max-width: 1500px) {
+    .NavbarCollapse {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
 

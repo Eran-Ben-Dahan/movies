@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 export const movieUrl =
   `https://api.themoviedb.org/3/discover/movie` +
   `?api_key=b3b1492d3e91e9f9403a2989f3031b0c` +
-  `&language=he-il` +
+  `&language=EN` +
   `&sort_by=popularity.desc` +
   `&include_adult=false` +
   `&include_video=false` +

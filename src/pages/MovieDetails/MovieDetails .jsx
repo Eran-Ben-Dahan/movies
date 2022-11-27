@@ -3,13 +3,14 @@ import { useSelector } from "react-redux";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { toggleFavorite } from "../../features/movies/movies-slice";
-import {  toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { useEffect } from "react";
 import "./MovieDetails.css";
 import { RiArrowGoBackLine } from "react-icons/ri";
+import { BackgroundImage } from "@mantine/core";
 
 function withMovie(Component) {
   return function MovieWrapper() {
@@ -49,55 +50,59 @@ const MovieDetails = ({ movie, trailer }) => {
   const dispatch = useDispatch();
   const iconStyles = { color: "#FF008A", fontSize: "100px" };
   return (
-     <div className="divBackdro">
+    <div style={{ backgroundImage: `url(${movie.backdrop_path})`}} className="divBackdro">
       <img
-        className="backdro" sty
-        src={movie.backdrop_path}
+        className="backdro"
+       
+        // src={movie.backdrop_path}
         alt="movie poster"
       />
-    <div style={{ direction: "rtl" }} className="movieDetails">
-     
-      {/* button Back  */}
-      <button
-        className="btn btn-primary buttonBack"
-        onClick={() => {
-          navigate(-1);
-        }}
-      >
-        <RiArrowGoBackLine />
-      </button>
-
-      <ReactPlayer url={trailer} className="trailer" />
-      <h2 className="titel">{movie.title}</h2>
-      <p className="overview">תקציר:<br></br>{movie.overview}</p>
-      <button
-        className="btn border-0 FavoriteBtn"
-        onClick={(e) => {
-          e.stopPropagation();
-          if (!movie.isFavorite) {
-            toast.success("Added", {
-              position: "top-center",
-              style: { textAlign: "center" },
-            });
-          } else {
-            toast.error("Removed", {
-              position: "top-center",
-              style: { textAlign: "center" },
-            });
-          }
-          dispatch(toggleFavorite(movie.id));
-        }}
-      >
-        {movie.isFavorite && <FaHeart style={iconStyles} />}
-        {!movie.isFavorite && <FaRegHeart style={iconStyles} />}
-      </button>
-      {/* <img
+      <div style={{ direction: "rtl" }} className="movieDetails">
+        {/* button Back  */}
+        <button
+          className="btn btn-primary buttonBack"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          <RiArrowGoBackLine />
+        </button>
+        <div className="topSide">
+          <h2 className="titel">{movie.title}</h2>
+          <ReactPlayer width="40%" height="40%" url={trailer} className="trailer"
+          />
+        </div>
+        <div className="bottomSide">
+          <p className="overview">
+            <u>:Summary</u><br></br> {movie.overview}
+          </p>
+        </div>
+        {/* button Favorit  */}
+        <button
+          className="btn border-0 FavoriteBtn"
+          onClick={(e) => {
+            e.stopPropagation();
+            if (!movie.isFavorite) {
+              toast.success("Added", {
+                style: { textAlign: "center" },
+              });
+            } else {
+              toast.error("Removed", {
+                style: { textAlign: "center" },
+              });
+            }
+            dispatch(toggleFavorite(movie.id));
+          }}
+        >
+          {movie.isFavorite && <FaHeart style={iconStyles} />}
+          {!movie.isFavorite && <FaRegHeart style={iconStyles} />}
+        </button>
+        {/* <img
         className="w-50 shadow-lg p-3 mb-5 bg-white rounded card"
         src={movie.poster_path}
         alt="movie poster"
       /> */}
-
-</div>
+      </div>
     </div>
   );
 };

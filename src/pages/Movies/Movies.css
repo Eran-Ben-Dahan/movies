@@ -5,10 +5,11 @@
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  margin: 0 auto;
+  margin: 40px auto;
   gap: 40px 50px;
   /* transition: 0.3s; */
 }
+
 
 @media (max-width: 1399px) {
   .movie_list_controle {

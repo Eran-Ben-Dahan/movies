@@ -10,12 +10,11 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
+    <div className="main_searchBar">
       
       <input className="searchBar"
         type="text"
-        placeholder="Search..."
-      
+        placeholder="Search.."
         onChange={(e) => {
           handleChange(e.target.value);
         }}
