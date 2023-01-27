@@ -16,12 +16,12 @@ padding: 15px;
   padding: 10px;
   border-radius: 20px;
   flex-direction: column;
-   background-image: linear-gradient(to bottom, #ffffff, #e0badb, #ccaada, #b29cda, #8e90db, #878dde, #7e8ae0, #7587e3, #958ae7, #b28de9, #cc90e9, #e493e7);  display: flex; 
+  
   flex-direction: column;
   gap: 10px;
   width: 30rem;
-  border:solid 2px gold;
-  background-color:#0F3460 ;
+  border:solid 2px #ecba25;
+  background-color:rgba(255, 255, 255, 0.1) ;
   color: white;
 
 }
@@ -44,7 +44,7 @@ h2{
 .commentRigth input{
     border-radius: 5px; 
     padding: 5px;
-    border:solid 2px gold;
+    border:solid 2px #ecba25;
     background-color:#0F3460 ;
     color: white;
 } 
@@ -52,19 +52,19 @@ h2{
     border-radius: 5px;
     height: 80px;
     padding: 5px;
-    border:solid 2px gold;
+    border:solid 2px #ecba25;
     background-color:#0F3460 ;
     color: white;
 }
 .commentRigth button{
-    border:solid 2px gold;
+    border:solid 2px #ecba25;
     border-radius: 5px;
-    color:gold;
+    color:#ecba25;
     background-color:#0F3460 ;
     font-size: 30px;
 }
 .commentRigth button:hover{
-    background-color: gold ;
+    background-color: #ecba25 ;
     color: #0F3460;
 } 
 .icons{

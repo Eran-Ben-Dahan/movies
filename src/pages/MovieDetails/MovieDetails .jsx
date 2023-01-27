@@ -50,13 +50,11 @@ const MovieDetails = ({ movie, trailer }) => {
   const dispatch = useDispatch();
   const iconStyles = { color: "#FF008A", fontSize: "100px" };
   return (
-    <div style={{ backgroundImage: `url(${movie.backdrop_path})`}} className="divBackdro">
-      <img
-        className="backdro"
-       
-        // src={movie.backdrop_path}
-        alt="movie poster"
-      />
+    <div
+      style={{ backgroundImage: `url(${movie.backdrop_path})` }}
+      className="divBackdro"
+    >
+      <img className="backdro" src={movie.backdrop_path} alt="movie poster" />
       <div style={{ direction: "rtl" }} className="movieDetails">
         {/* button Back  */}
         <button
@@ -69,12 +67,21 @@ const MovieDetails = ({ movie, trailer }) => {
         </button>
         <div className="topSide">
           <h2 className="titel">{movie.title}</h2>
-          <ReactPlayer width="40%" height="40%" url={trailer} className="trailer"
+          <ReactPlayer
+            width="40%"
+            height="40%"
+            url={trailer}
+            className="trailer"
+            controls
+            config={{
+              youtube: {
+                playerVars: { showinfo: 1 }}}}
           />
         </div>
         <div className="bottomSide">
           <p className="overview">
-            <u>:Summary</u><br></br> {movie.overview}
+            <u>:Summary</u>
+            <br></br> {movie.overview}
           </p>
         </div>
         {/* button Favorit  */}

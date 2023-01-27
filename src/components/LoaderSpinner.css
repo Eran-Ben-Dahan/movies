@@ -1,0 +1,32 @@
+@media (max-width: 1500px) {
+  .InfinitySpin {
+    display: none;
+  }
+}
+@media (max-width: 1220px) {
+  .ColorRing {
+    display: none;
+  }
+}
+@media (max-width:930px) {
+    .Audio {
+      display: none;
+    }
+  }
+  @media (max-width:800px) {
+    .Hearts {
+      display: none;
+    }
+  }
+  @media (max-width:540px) {
+    .CirclesWithBar {
+      display: none;
+    }
+ 
+  }
+  @media (max-width:420px ) {
+    .Bars {
+      display: none;
+      
+    }
+  }

@@ -27,8 +27,8 @@ const TopNav = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="NavbarCollapse">
           <Nav className="me-auto">
             <TopNavLink to="/home" label="Home" />
-            <TopNavLink to="/movies" label="Movies" />
-            <NavDropdown to="/movies" label="Movies" id="basic-nav-dropdown">
+            <TopNavLink to="/movies" label="Movies"/>
+              <NavDropdown to="/movies" label="Movies" title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="/movies/action">Action</NavDropdown.Item>
               <NavDropdown.Item href="/movies/comedy">Comedy </NavDropdown.Item>
               <NavDropdown.Item href="/movies/drama">Drama</NavDropdown.Item>
@@ -40,12 +40,11 @@ const TopNav = () => {
               <NavDropdown.Item href="/movies/romance">Romance</NavDropdown.Item>
               <NavDropdown.Item href="/movies/war">War</NavDropdown.Item>
               <NavDropdown.Item href="/movies/music">Music</NavDropdown.Item>
-            </NavDropdown>
+             </NavDropdown>
             <TopNavLink to="/favorites" label="Favorites" />
             <TopNavLink to="/comments" label="Comments" />
             <TopNavLink to="/about" label="About" />
           </Nav>
-          
         </Navbar.Collapse>
       </Container>
       <Login />

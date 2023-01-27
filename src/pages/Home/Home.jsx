@@ -4,6 +4,8 @@ import reactLogo from "../../components/Media/Image/React logo.jpg";
 import javascriptLogo from "../../components/Media/Image/Javascript Logo.jpg";
 import htmlLogo from "../../components/Media/Image/HTML5_logo.jpg";
 import cssLogo from "../../components/Media/Image/CSS3 Logo .jpg";
+  import LoaderSpinner from "../../components/LoaderSpinner";
+
 const Home = () => {
   return (
     <div className="container_home">
@@ -26,7 +28,7 @@ const Home = () => {
         </div>
         <div>
           <h3>
-            <span>02.</span>MOVIES
+            <span>02. </span>MOVIES
           </h3>
           <p>
             - You can find an endless library of movies of all time.<br></br>-
@@ -38,7 +40,7 @@ const Home = () => {
         </div>
         <div>
           <h3>
-            <span>03.</span>FAVORITES
+            <span>03. </span>FAVORITES
           </h3>
           <p>
             - Here you can find all your saved movies. <br></br>- You can always
@@ -47,7 +49,7 @@ const Home = () => {
         </div>
         <div>
           <h3>
-            <span>04.</span>COMMENTS
+            <span>04. </span>COMMENTS
           </h3>
           <p>
             - Here you can see other people's comments.<br></br>- add comment.<br></br>- delete comment.
@@ -56,13 +58,13 @@ const Home = () => {
         </div>
         <div>
           <h3>
-            <span>05.</span>ABOUT
+            <span>05. </span>ABOUT
           </h3>
           <p>- Here you can see the experience of the website builder.</p>
         </div>
         <div>
           <h3>
-            <span>06.</span>MORE OPTIONS
+            <span>06. </span>MORE OPTIONS
           </h3>
           <p>- You can logein <br></br>- You can use in dark mode.</p>
         </div>
@@ -100,7 +102,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="main_3">
+        <LoaderSpinner/>
+      </div>
     </div>
   );
 };

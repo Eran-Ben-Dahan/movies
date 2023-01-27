@@ -1,3 +1,4 @@
+
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import MovieItem from "../../components/MovieItem/MovieItem";
@@ -6,6 +7,8 @@ import genres from "../../features/movies/genres";
 import useMovies from "../../hooks/useMovies";
 import "./Movies.css";
 import TopNav2 from '../../components/nav/TopNav2'
+
+
 
 
 
@@ -31,8 +34,9 @@ const Movies = () => {
   const movies = useSelector((state) => state.movie.moviesFiltered);
 
   return (
+    
     <div className={isDark ? "page_1_dark" : "page_1_light"}>
-     
+      
       <div
         className="movie_list_controle"
         style={{ direction: "rtl" }}

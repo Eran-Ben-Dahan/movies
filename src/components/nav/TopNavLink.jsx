@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import './TopNavLink.css'
 
 const TopNavLink = ({ label, to }) => {
   return (

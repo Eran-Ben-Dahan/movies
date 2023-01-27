@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 80px 60px;
-background-image: linear-gradient(to right bottom, #6b6bd1, #6e7dd9, #748edf, #7e9ee4, #8caee7, #8dace2, #8dabdc, #8ea9d7, #7f97c8, #7285b9, #6573aa, #59629b);
+
 //position: absolute;//
 bottom: 0;
 width: 100%;
-
+background-color: #17232e; 
 
 
 

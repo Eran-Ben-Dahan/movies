@@ -11,19 +11,22 @@ import { useSelector } from "react-redux";
 import Footer from "../src/Footer/Footer.jsx";
 import { ToastContainer } from "react-toastify";
 import Comments from "./pages/Comments/Comments";
+ import ScrollToTop from './/components/ScrollToTop/ScrollToTop'
+
+
 // import TopNav2 from "./components/nav/TopNav2";
 function App() {
+
   // once the app is loaded, fetch the movies once.
   const isDark = useSelector((state)=> state.theme.isDark)//מצב התחלתי של ISDARK INITIALSTATE
-
   return (
     
     <div className={ `app ${isDark ? "light" : "dark"}`}>
       <TopNav/>
       {/* <TopNav2/> */}
-      <ToastContainer />
       {/* <LoaderSpinner/> */}
       <div className="app-wrapper">
+        <ScrollToTop/>
       <Routes >
         <Route path="/home" element={<Home/>} />
         <Route path = "/" element={<Navigate to="/home"/>}/>
