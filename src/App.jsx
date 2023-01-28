@@ -9,9 +9,7 @@ import Movies from "./pages/Movies/Movies";
 import Home from './pages/Home/Home';
 import { useSelector } from "react-redux";
 import Footer from "../src/Footer/Footer.jsx";
-import { ToastContainer } from "react-toastify";
 import Comments from "./pages/Comments/Comments";
- import ScrollToTop from './/components/ScrollToTop/ScrollToTop'
 
 
 // import TopNav2 from "./components/nav/TopNav2";
@@ -26,7 +24,7 @@ function App() {
       {/* <TopNav2/> */}
       {/* <LoaderSpinner/> */}
       <div className="app-wrapper">
-        <ScrollToTop/>
+        {/* <ScrollToTop/> */}
       <Routes >
         <Route path="/home" element={<Home/>} />
         <Route path = "/" element={<Navigate to="/home"/>}/>
